@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Floating Elements</title>
+<style type="text/css"> 
+
+div {
+  background-color: #00FFFF;
+  margin: 0 5px 15px 0;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+p {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+#p1 {
+  background-color: #A52A2A;
+  float: left;
+  height: 50px;
+}
+#p2 {
+  background-color: #DEB887;
+  float: right;
+  height: 50px;
+}
+#p3 {
+  background-color: #5F9EA0;
+  clear: both;
+  float: right;
+}
+#p4 {
+  background-color: #FF7F50;
+  float: right;
+}
+
+section {
+  clear: left;
+}
+
+</style>
+</head>
+<body>
+<h1>Floating Elements</h1>
+<div>
+  <div>
+  <p id="p1"></p>
+    <p><a href="#">p1</a></p>
+  </div>
+    <div>
+  <p id="p2"></p>
+      <p><a href="#">p2</a></p>
+      </div>
+    <div>
+      <p id="p3"></p>
+      <p><a href="#">p3</a></p>
+      </div>
+    <div>
+      <p id="p4"></p>
+      <p><a href="#">p4</a></p>
+      </div>
+  <section>This is regular content continuing after the the paragraph boxes.</section>
+</div>
+
+
+</body>
+</html>
